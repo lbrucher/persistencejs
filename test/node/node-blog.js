@@ -31,8 +31,8 @@
 var sys = require('sys');
 var parseUrl = require('url').parse;
 
-var persistence = require('persistencejs/persistence').persistence;
-var persistenceStore = require('persistencejs/persistence.store.mysql');
+var persistence = require('../../lib/persistence').persistence;
+var persistenceStore = require('../../lib/persistence.store.mysql');
 
 // Database configuration
 persistenceStore.config(persistence, 'localhost', 3306, 'nodejs_mysql', 'test', 'test');
